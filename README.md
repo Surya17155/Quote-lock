@@ -190,11 +190,3 @@ QuoteLock/
 ```
 
 ---
-
-## 🏷️ Repository Description & Topics
-
-**Suggested GitHub Description:**  
-> Autonomous Windows lock screen quote generator & visual design studio. Generates AI-curated quotes from your instructions, renders 1920×1080 cards, and updates your lock screen automatically in the background.
-
-**Topics / Hashtags:**  
-`#windows` `#lockscreen` `#wallpaper` `#quotelock` `#ai` `#automation` `#electron` `#react` `#powershell` `#typescript` `#tailwindcss` `#vibecoding` `#customization` `#productivity` `#byok`
