@@ -33,6 +33,22 @@
 
 ---
 
+## 🎬 1-Minute Walkthrough Video
+
+New to QuoteLock? Watch this quick **1-minute overview** to see how the autonomous lock screen engine and QuoteLock Studio work together:
+
+<div align="center">
+
+<a href="https://github.com/Surya17155/Quote-lock/blob/main/docs/quotelock-final.mp4">
+  <img src="https://img.shields.io/badge/▶_Watch_1--Minute_Demo_Video-QuoteLock_Walkthrough-1f6feb?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch 1-Minute Demo Video" />
+</a>
+
+<sub><a href="https://github.com/Surya17155/Quote-lock/blob/main/docs/quotelock-final.mp4">Watch on GitHub</a> · <a href="https://github.com/Surya17155/Quote-lock/raw/main/docs/quotelock-final.mp4">Download MP4 (8.8 MB)</a></sub>
+
+</div>
+
+---
+
 ## ✨ What is QuoteLock?
 
 **QuoteLock is not just a manual wallpaper setter.** It is an **autonomous background system** for Windows 10/11 that:
