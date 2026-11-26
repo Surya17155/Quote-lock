@@ -10,7 +10,26 @@
 [![Electron + React](https://img.shields.io/badge/Studio-Electron%20%2B%20React%2019-47848F?style=for-the-badge&logo=electron&logoColor=white)](#)
 [![BYOK](https://img.shields.io/badge/AI-Bring%20Your%20Own%20Key-c8a656?style=for-the-badge)](#where-to-paste-your-api-key)
 
+<br/>
+
+<a href="https://github.com/Surya17155/Quote-lock/releases/latest/download/QuoteLock.Setup.0.1.0.exe">
+  <img src="https://img.shields.io/badge/⬇️_Download_QuoteLock_for_Windows_(.exe)-One--Click_Installer-2ea44f?style=for-the-badge&logo=windows&logoColor=white" alt="Download QuoteLock for Windows" />
+</a>
+
+<sub>Windows 10 / 11 (64-bit) · <a href="https://github.com/Surya17155/Quote-lock/releases/latest">View all releases</a> · Or <a href="#-quick-start">run from source</a></sub>
+
 </div>
+
+---
+
+## ⬇️ One-Click Windows Install
+
+1. Click **[Download QuoteLock for Windows (.exe)](https://github.com/Surya17155/Quote-lock/releases/latest/download/QuoteLock.Setup.0.1.0.exe)** *(or grab the latest `.exe` from [Releases](https://github.com/Surya17155/Quote-lock/releases/latest))*.
+2. Run **`QuoteLock Setup 0.1.0.exe`** (no Node.js or coding tools required).
+3. Open **QuoteLock** from your Desktop or Start Menu, paste your API key in **Settings**, and turn on **QuoteLock activity** — your lock screen updates automatically from there.
+
+> [!NOTE]
+> If Windows SmartScreen asks for confirmation on first run (since the installer is unsigned), click **More info → Run anyway**.
 
 ---
 
