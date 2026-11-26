@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+studio/node_modules/
+video/render/node_modules/
+
+# Build outputs
+studio/dist/
+studio/release/
+studio/build/
+*.exe
+
+# User config & secrets (never commit)
+config.json
+backup/
+data/
+queue/
+shown/
+lockscreen/
+assets/user/
+*.log
+*.pid
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Private video folder (personal/social media, never commit)
+video/
+
+# Playwright / browser profiles
+studio/shots/
+studio/*.log
+studio/*.err.log
+video/render/index.html
+
+# Windows shortcuts
+*.lnk
+*.url
+
+# Environment files
+.env
+.env.local
+*.env
+
+# Test outputs
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx

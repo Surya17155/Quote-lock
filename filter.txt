@@ -1,0 +1,71 @@
+
+[0:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,
+ zoompan=z='min(1.06+0.0008*t,1.10)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=3600:s=1920x1080:fps=60[bg];
+
+[1:v]scale=1360:850:force_original_aspect_ratio=increase,crop=1360:850,
+ zoompan=z='min(1.02+0.005*t,1.065)':x='680-(680/zoom)':y='425-(425/zoom)':d=567:s=1360x850:fps=60,
+ fade=in:0:30,fade=out:537:30[s0];
+
+[2:v]scale=1360:850:force_original_aspect_ratio=increase,crop=1360:850,
+ zoompan=z='min(1.05+0.065*t/6.6,1.115)':x='574-(574/zoom)':y='357-(357/zoom)':d=396:s=1360x850:fps=60,
+ fade=in:0:30,fade=out:366:30[s1];
+
+[1:v]scale=1360:850:force_original_aspect_ratio=increase,crop=1360:850,
+ zoompan=z='max(1.115-0.055*t/8.6,1.06)':x='574-(574/zoom)':y='357-(357/zoom)':d=516:s=1360x850:fps=60,
+ fade=in:0:30,fade=out:486:30[s2];
+
+[3:v]scale=1360:850:force_original_aspect_ratio=increase,crop=1360:850,
+ zoompan=z='min(1.045+0.06*t/7.8,1.105)':x='1165-(1165/zoom)':y='340-(340/zoom)':d=468:s=1360x850:fps=60,
+ fade=in:0:30,fade=out:438:30[s3];
+
+[4:v]scale=1360:850:force_original_aspect_ratio=increase,crop=1360:850,
+ zoompan=z='max(1.105-0.03*t/1.43,1.075)':x='1214-(1214/zoom)':y='281-(281/zoom)':d=86:s=1360x850:fps=60,
+ fade=in:0:15,fade=out:71:15[s4];
+
+[5:v]scale=1360:850:force_original_aspect_ratio=increase,crop=1360:850,
+ zoompan=z='max(1.105-0.03*t/4.77,1.075)':x='1165-(1165/zoom)':y='340-(340/zoom)':d=286:s=1360x850:fps=60,
+ fade=in:0:15,fade=out:271:15[s5];
+
+[6:v]scale=1360:850:force_original_aspect_ratio=increase,crop=1360:850,
+ zoompan=z='max(1.105-0.03*t/9.07,1.075)':x='1165-(1165/zoom)':y='340-(340/zoom)':d=544:s=1360x850:fps=60,
+ fade=in:0:15,fade=out:529:15[s6];
+
+[7:v]scale=1360:850:force_original_aspect_ratio=increase,crop=1360:850,
+ zoompan=z='min(1.02+0.065*t/5.88,1.085)':x='765-(765/zoom)':y='357-(357/zoom)':d=353:s=1360x850:fps=60,
+ fade=in:0:15,fade=out:338:15[s7];
+
+[8:v]scale=1360:850:force_original_aspect_ratio=increase,crop=1360:850,
+ zoompan=z='min(1.085+0.03*t/6.4,1.115)':x='1145-(1145/zoom)':y='212-(212/zoom)':d=384:s=1360x850:fps=60,
+ fade=in:0:15,fade=out:369:15[s8];
+
+[s0][s1][s2][s3][s4][s5][s6][s7][s8]concat=n=9:v=1:a=0[shots];
+
+color=c=0xF4F1EA:size=1360x850:rate=60:duration=60[winbg];
+[winbg][shots]overlay=0:0[wincomp];
+
+# Rounded corners using alpha channel from geq
+color=c=white:size=1360x850:rate=60:duration=60,format=rgba,
+ geq=r=255:g=255:b=255:a='if(gt(X,26)*gt(Y,26)*gt(1334-X,26)*gt(824-Y,26),255,0)'[mask];
+[wincomp][mask]alphamerge[winrounded];
+
+# Place window on background
+[bg][winrounded]overlay=280:58[composed];
+
+# Captions
+[composed]drawtext=fontsize=26:fontcolor=white:shadowcolor=black@0.6:shadowx=2:shadowy=2:x=300:y=1000:text='A new quote, every morning.':enable='between(t,1.5,7.3)'[c1];
+[c1]drawtext=fontsize=26:fontcolor=white:shadowcolor=black@0.6:shadowx=2:shadowy=2:x=300:y=1000:text='It writes and publishes for you.':enable='between(t,9,15.5)'[c2];
+[c2]drawtext=fontsize=26:fontcolor=white:shadowcolor=black@0.6:shadowx=2:shadowy=2:x=300:y=1000:text='A fresh card, every day.':enable='between(t,17,23.6)'[c3];
+[c3]drawtext=fontsize=26:fontcolor=white:shadowcolor=black@0.6:shadowx=2:shadowy=2:x=300:y=1000:text='Design it your way.':enable='between(t,25.6,31.6)'[c4];
+[c4]drawtext=fontsize=26:fontcolor=white:shadowcolor=black@0.6:shadowx=2:shadowy=2:x=300:y=1000:text='One click to the lock screen.':enable='between(t,33.4,38)'[c5];
+[c5]drawtext=fontsize=26:fontcolor=white:shadowcolor=black@0.6:shadowx=2:shadowy=2:x=300:y=1000:text='Your keys. Your model.':enable='between(t,39.3,46.2)'[c6];
+[c6]drawtext=fontsize=26:fontcolor=white:shadowcolor=black@0.6:shadowx=2:shadowy=2:x=300:y=1000:text='Off means off.':enable='between(t,47.4,53)'[c7];
+
+# End card
+[c7]split[vid][endbase];
+[endbase]color=c=0x0B0D12:size=1920x1080:rate=60:duration=60[black];
+[black]drawtext=fontsize=104:fontcolor=white:shadowcolor=black@0.5:shadowx=4:shadowy=4:x=(w-text_w)/2:y=(h-text_h)/2-20:text='QuoteLock':enable='gte(t,54)'[wm];
+[wm]drawtext=fontsize=25:fontcolor=white@0.86:shadowcolor=black@0.5:shadowx=2:shadowy=2:x=(w-text_w)/2:y=(h-text_h)/2+90:text='A QUIET IDEA, EVERY DAY':enable='gte(t,54)'[tag];
+[tag]drawtext=fontsize=1:fontcolor=white@0.6:x=(w-54)/2:y=(h-text_h)/2+130:text='______________________________________________________':enable='gte(t,54)'[rule];
+[vid][rule]overlay=0:0:enable='gte(t,54)':format=auto,format=yuv420p[finalv];
+
+[finalv]format=yuv420p[v]

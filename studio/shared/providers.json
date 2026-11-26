@@ -1,0 +1,88 @@
+[
+  {
+    "id": "nvidia",
+    "label": "NVIDIA NIM",
+    "baseUrl": "https://integrate.api.nvidia.com/v1",
+    "auth": "bearer",
+    "hint": "Nemotron, Llama, DeepSeek and Qwen builds hosted by NVIDIA."
+  },
+  {
+    "id": "openai",
+    "label": "OpenAI",
+    "baseUrl": "https://api.openai.com/v1",
+    "auth": "bearer",
+    "hint": "GPT and o-series models."
+  },
+  {
+    "id": "openrouter",
+    "label": "OpenRouter",
+    "baseUrl": "https://openrouter.ai/api/v1",
+    "auth": "bearer",
+    "hint": "One key for many vendor models."
+  },
+  {
+    "id": "groq",
+    "label": "Groq",
+    "baseUrl": "https://api.groq.com/openai/v1",
+    "auth": "bearer",
+    "hint": "Very fast Llama and Mixtral inference."
+  },
+  {
+    "id": "together",
+    "label": "Together AI",
+    "baseUrl": "https://api.together.xyz/v1",
+    "auth": "bearer",
+    "hint": "Open models on hosted GPUs."
+  },
+  {
+    "id": "deepseek",
+    "label": "DeepSeek",
+    "baseUrl": "https://api.deepseek.com/v1",
+    "auth": "bearer",
+    "hint": "DeepSeek chat and reasoner models."
+  },
+  {
+    "id": "mistral",
+    "label": "Mistral",
+    "baseUrl": "https://api.mistral.ai/v1",
+    "auth": "bearer",
+    "hint": "Mistral and Codestral models."
+  },
+  {
+    "id": "xai",
+    "label": "xAI",
+    "baseUrl": "https://api.x.ai/v1",
+    "auth": "bearer",
+    "hint": "Grok models."
+  },
+  {
+    "id": "gemini",
+    "label": "Google Gemini",
+    "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+    "auth": "bearer",
+    "hint": "Gemini through the OpenAI-compatible endpoint."
+  },
+  {
+    "id": "anthropic",
+    "label": "Anthropic",
+    "baseUrl": "https://api.anthropic.com/v1",
+    "auth": "x-api-key",
+    "hint": "Claude models through the compatibility endpoint."
+  },
+  {
+    "id": "ollama",
+    "label": "Ollama",
+    "baseUrl": "http://localhost:11434/v1",
+    "auth": "none",
+    "hint": "Local models, no key required.",
+    "local": true
+  },
+  {
+    "id": "custom",
+    "label": "Custom",
+    "baseUrl": "",
+    "auth": "bearer",
+    "hint": "Any OpenAI-compatible endpoint. Paste its base URL.",
+    "custom": true
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "apiKey": "",
+  "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "mode": "quotes",
+  "categories": [
+    "Motivation",
+    "Stoicism",
+    "Discipline",
+    "Wisdom",
+    "Success",
+    "Science",
+    "Creativity"
+  ],
+  "daysAhead": 2,
+  "theme": "dark",
+  "width": 1920,
+  "height": 1080,
+  "font": "Segoe Script",
+  "edge": "",
+  "description": "",
+  "skillPath": "",
+  "webResearch": true,
+  "think": true
+}
