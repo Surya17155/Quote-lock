@@ -37,7 +37,7 @@
 
 New to QuoteLock? Watch this quick **1-minute overview** to see how the autonomous lock screen engine and QuoteLock Studio work together:
 
-https://github.com/user-attachments/assets/9fe33b05-ed89-4ae0-ac0e-d6f4b34711a2
+https://github.com/user-attachments/assets/e042b18f-53ec-4ea5-84fd-f3d9edb8725d
 
 <div align="center">
 
@@ -45,7 +45,7 @@ https://github.com/user-attachments/assets/9fe33b05-ed89-4ae0-ac0e-d6f4b34711a2
   <img src="https://img.shields.io/badge/▶_Watch_1--Minute_Demo_Video-QuoteLock_Walkthrough-1f6feb?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch 1-Minute Demo Video" />
 </a>
 
-<sub><a href="https://github.com/Surya17155/Quote-lock/blob/main/docs/quotelock-final.mp4">Watch on GitHub</a> · <a href="https://github.com/Surya17155/Quote-lock/raw/main/docs/quotelock-final.mp4">Download MP4 (8.8 MB)</a></sub>
+<sub><a href="https://github.com/Surya17155/Quote-lock/blob/main/docs/quotelock-final.mp4">Watch on GitHub</a> · <a href="https://github.com/Surya17155/Quote-lock/raw/main/docs/quotelock-final.mp4">Download MP4 (5.6 MB)</a></sub>
 
 </div>
 
