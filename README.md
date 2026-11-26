@@ -37,6 +37,8 @@
 
 New to QuoteLock? Watch this quick **1-minute overview** to see how the autonomous lock screen engine and QuoteLock Studio work together:
 
+https://github.com/user-attachments/assets/9fe33b05-ed89-4ae0-ac0e-d6f4b34711a2
+
 <div align="center">
 
 <a href="https://github.com/Surya17155/Quote-lock/blob/main/docs/quotelock-final.mp4">
